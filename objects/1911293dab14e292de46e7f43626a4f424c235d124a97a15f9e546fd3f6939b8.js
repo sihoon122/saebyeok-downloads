@@ -1,0 +1,1 @@
+import{t as e}from"./game-aBIwo4jX.js";e();

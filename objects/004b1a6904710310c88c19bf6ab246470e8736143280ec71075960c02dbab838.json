@@ -1,0 +1,111 @@
+{
+ "_comment": "art-src/tools/process.py lobby 가 만든다. 경로: assets/lobby/<이름>.webp, w/h = 표시 px",
+ "totalBytes": 762506,
+ "images": {
+  "ch1_diorama": {
+   "w": 640,
+   "h": 640,
+   "bytes": 82680
+  },
+  "ch2_diorama": {
+   "w": 640,
+   "h": 640,
+   "bytes": 99640
+  },
+  "ch3_diorama": {
+   "w": 640,
+   "h": 640,
+   "bytes": 111550
+  },
+  "duck_hero": {
+   "w": 512,
+   "h": 640,
+   "bytes": 50600
+  },
+  "robot_hero": {
+   "w": 480,
+   "h": 480,
+   "bytes": 35566
+  },
+  "gear_nailer": {
+   "w": 256,
+   "h": 256,
+   "bytes": 11440
+  },
+  "gear_jacket": {
+   "w": 256,
+   "h": 256,
+   "bytes": 15126
+  },
+  "gear_earmuff": {
+   "w": 256,
+   "h": 256,
+   "bytes": 13246
+  },
+  "crate_closed": {
+   "w": 256,
+   "h": 256,
+   "bytes": 16398
+  },
+  "crate_open": {
+   "w": 256,
+   "h": 256,
+   "bytes": 19450
+  },
+  "robot_nut_hero": {
+   "w": 480,
+   "h": 480,
+   "bytes": 40590
+  },
+  "robot_spanner_hero": {
+   "w": 480,
+   "h": 480,
+   "bytes": 35856
+  },
+  "gear_helmet": {
+   "w": 256,
+   "h": 256,
+   "bytes": 11558
+  },
+  "gear_belt": {
+   "w": 256,
+   "h": 256,
+   "bytes": 16438
+  },
+  "gear_gloves": {
+   "w": 256,
+   "h": 256,
+   "bytes": 16546
+  },
+  "rs_wrench": {
+   "w": 160,
+   "h": 160,
+   "bytes": 12412
+  },
+  "rs_shield": {
+   "w": 160,
+   "h": 160,
+   "bytes": 10478
+  },
+  "rs_combo": {
+   "w": 160,
+   "h": 160,
+   "bytes": 10182
+  },
+  "duck_patrol": {
+   "w": 512,
+   "h": 640,
+   "bytes": 48628
+  },
+  "duck_raincoat": {
+   "w": 512,
+   "h": 640,
+   "bytes": 53758
+  },
+  "duck_demolition": {
+   "w": 512,
+   "h": 640,
+   "bytes": 50364
+  }
+ }
+}

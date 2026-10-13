@@ -1,0 +1,8 @@
+{
+  "protocol": 1,
+  "assetsBase": "https://sihoon122.github.io/saebyeok-downloads/",
+  "manifestUrl": "https://sihoon122.github.io/saebyeok-downloads/version.json",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAufazj3TsFF5JP2Ug98mT//IdaokB/+N6vbuJwyx+6es13ResrO+FSDDM7o+wCCvKUmBKHtOGzgj2ZA4EcjhmZr70WV3bL5Y1AWMmRhB3RbUlSVJ3bwLSgcpFXcWk4uLd0wah1qOtd5Csf/ztG+Q0FtBasPwYMpCPF1bels7PidZ5ZdQHy/+STzcFdAz2urfQRnjoCL3+XI/Br1JJ0haJPksJir/SFp0wbyqSye9Ga3Ohibo5EIB9LGu4WZWwpViCWeYBPpYZuS6ezt1LoKOV6EkHQ0h+A8PxDn3SQmDnfPIwJ5e87DddPNfFXRrtU/TSfxVJFLNas7LPIS7sxk987QIDAQAB",
+  "installUrl": "https://saebyeok-game.limsihoon.chatgpt.site/install",
+  "minApkCode": 3906
+}
