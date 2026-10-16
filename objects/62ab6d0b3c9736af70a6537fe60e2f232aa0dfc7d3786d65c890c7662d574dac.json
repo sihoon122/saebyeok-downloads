@@ -1,0 +1,1801 @@
+{
+ "version": 1,
+ "sprites": {
+  "core": "sfx/sp_core.mp3",
+  "weapons": "sfx/sp_weapons.mp3",
+  "skills": "sfx/sp_skills.mp3",
+  "events": "sfx/sp_events.mp3",
+  "ui": "sfx/sp_ui.mp3"
+ },
+ "spriteSync": 0.1,
+ "cues": {
+  "shot": {
+   "sprite": "core",
+   "regions": [[0.25,0.13989],[0.42989,0.13098],[0.60086,0.12998]],
+   "gain": 1.59,
+   "maxVoices": 4,
+   "cooldown": 0.04,
+   "pitchJitter": 1.2,
+   "bus": "sfx",
+   "dense": true,
+   "family": "fire"
+  },
+  "shotEvo": {
+   "sprite": "core",
+   "regions": [[0.77084,0.19098],[1.00181,0.19098]],
+   "gain": 1.26,
+   "maxVoices": 4,
+   "cooldown": 0.05,
+   "pitchJitter": 1.2,
+   "bus": "sfx",
+   "dense": true,
+   "family": "fire"
+  },
+  "turret": {
+   "sprite": "core",
+   "regions": [[1.23279,0.12998],[1.40277,0.12998],[1.57274,0.13016]],
+   "gain": 1.87,
+   "maxVoices": 6,
+   "cooldown": 0.03,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "dense": true,
+   "family": "turret"
+  },
+  "hit": {
+   "sprite": "core",
+   "regions": [[1.7429,0.122],[1.9049,0.122],[2.06689,0.122]],
+   "gain": 1.27,
+   "maxVoices": 6,
+   "cooldown": 0.03,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "critHit": {
+   "sprite": "core",
+   "regions": [[2.22889,0.22399],[2.49288,0.22399]],
+   "gain": 1.32,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "enemyDie": {
+   "sprite": "core",
+   "regions": [[2.75687,0.32601],[3.12288,0.32601],[3.48889,0.32601]],
+   "gain": 0.58,
+   "maxVoices": 5,
+   "cooldown": 0.04,
+   "pitchJitter": 2.0,
+   "bus": "sfx",
+   "dense": true,
+   "family": "die"
+  },
+  "zap": {
+   "sprite": "core",
+   "regions": [[3.8549,0.3],[4.1949,0.3],[4.5349,0.3]],
+   "gain": 0.76,
+   "maxVoices": 3,
+   "cooldown": 0.06,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true
+  },
+  "explosion": {
+   "sprite": "core",
+   "regions": [[4.8749,1.39372],[6.30862,1.45134]],
+   "gain": 0.81,
+   "maxVoices": 3,
+   "cooldown": 0.08,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "duck": 0.15
+  },
+  "bigExplosion": {
+   "sprite": "core",
+   "regions": [[7.79995,2.43866]],
+   "gain": 1.02,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.5,
+   "bus": "sfx",
+   "duck": 0.5
+  },
+  "shock": {
+   "sprite": "core",
+   "regions": [[10.27862,1.09213]],
+   "gain": 0.94,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.35
+  },
+  "hurt": {
+   "sprite": "core",
+   "regions": [[11.41075,0.2],[11.65075,0.2]],
+   "gain": 1.1,
+   "maxVoices": 2,
+   "cooldown": 0.12,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "duck": 0.1
+  },
+  "footstep": {
+   "sprite": "core",
+   "regions": [[11.89075,0.07],[12.00075,0.07],[12.11075,0.07]],
+   "gain": 0.39,
+   "maxVoices": 2,
+   "cooldown": 0.12,
+   "pitchJitter": 2.0,
+   "bus": "sfx",
+   "dense": true
+  },
+  "coin": {
+   "sprite": "core",
+   "regions": [[12.22075,0.3],[12.56075,0.3],[12.90075,0.3]],
+   "gain": 0.54,
+   "maxVoices": 4,
+   "cooldown": 0.04,
+   "pitchJitter": 0.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "ding"
+  },
+  "spitLaunch": {
+   "sprite": "core",
+   "regions": [[13.24075,0.2],[13.48075,0.2]],
+   "gain": 1.03,
+   "maxVoices": 3,
+   "cooldown": 0.06,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true
+  },
+  "spitHit": {
+   "sprite": "core",
+   "regions": [[13.72075,0.28],[14.04075,0.28]],
+   "gain": 0.81,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true
+  },
+  "cartFuse": {
+   "sprite": "core",
+   "regions": [[14.36075,0.55]],
+   "gain": 0.56,
+   "maxVoices": 3,
+   "cooldown": 0.1,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "cartBlast": {
+   "sprite": "core",
+   "regions": [[14.95075,1.21034]],
+   "gain": 1.01,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "duck": 0.35
+  },
+  "cartFizzle": {
+   "sprite": "core",
+   "regions": [[16.20109,0.5]],
+   "gain": 0.71,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 1.0,
+   "bus": "sfx"
+  },
+  "drillDig": {
+   "sprite": "core",
+   "regions": [[16.74109,0.89941]],
+   "gain": 0.47,
+   "maxVoices": 1,
+   "cooldown": 0.4,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "drillEmerge": {
+   "sprite": "core",
+   "regions": [[17.6805,1.15234]],
+   "gain": 0.96,
+   "maxVoices": 1,
+   "cooldown": 0.4,
+   "pitchJitter": 0.3,
+   "bus": "sfx",
+   "duck": 0.35
+  },
+  "craneSwing": {
+   "sprite": "core",
+   "regions": [[18.87283,0.59932]],
+   "gain": 0.58,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.5,
+   "bus": "sfx",
+   "duck": 0.1
+  },
+  "craneCall": {
+   "sprite": "core",
+   "regions": [[19.51215,0.9]],
+   "gain": 0.59,
+   "maxVoices": 1,
+   "cooldown": 1.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.35
+  },
+  "wallBuild": {
+   "sprite": "core",
+   "regions": [[20.45215,0.21]],
+   "gain": 0.65,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.0,
+   "bus": "sfx"
+  },
+  "wallBreak": {
+   "sprite": "core",
+   "regions": [[20.70215,0.68311]],
+   "gain": 0.64,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "duck": 0.1
+  },
+  "turretBreak": {
+   "sprite": "core",
+   "regions": [[21.42526,0.8173]],
+   "gain": 0.66,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.5,
+   "bus": "sfx",
+   "duck": 0.1
+  },
+  "build": {
+   "sprite": "core",
+   "regions": [[22.28256,0.86]],
+   "gain": 0.62,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "upgrade": {
+   "sprite": "core",
+   "regions": [[23.18256,0.92]],
+   "gain": 0.57,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.15
+  },
+  "robotDown": {
+   "sprite": "core",
+   "regions": [[24.14256,0.9]],
+   "gain": 0.49,
+   "maxVoices": 1,
+   "cooldown": 0.5,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.15
+  },
+  "robotBack": {
+   "sprite": "core",
+   "regions": [[25.08256,0.96029]],
+   "gain": 0.5,
+   "maxVoices": 1,
+   "cooldown": 0.5,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "guardBack": {
+   "sprite": "core",
+   "regions": [[26.08286,0.56991]],
+   "gain": 0.47,
+   "maxVoices": 2,
+   "cooldown": 0.2,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "shieldClank": {
+   "sprite": "core",
+   "regions": [[26.69277,0.25],[26.98277,0.25]],
+   "gain": 0.69,
+   "maxVoices": 3,
+   "cooldown": 0.08,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "dense": true,
+   "priority": 1
+  },
+  "leapThud": {
+   "sprite": "core",
+   "regions": [[27.27277,0.3],[27.61277,0.3]],
+   "gain": 0.8,
+   "maxVoices": 3,
+   "cooldown": 0.1,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "dense": true,
+   "priority": 1
+  },
+  "nailerHit": {
+   "sprite": "weapons",
+   "regions": [[0.25,0.11],[0.4,0.11],[0.55,0.11]],
+   "gain": 1.11,
+   "maxVoices": 5,
+   "cooldown": 0.03,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "nailerCast": {
+   "sprite": "weapons",
+   "regions": [[0.7,0.32787]],
+   "gain": 0.72,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "nailerSkHit": {
+   "sprite": "weapons",
+   "regions": [[1.06787,0.08],[1.18787,0.08]],
+   "gain": 1.0,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "wPistol": {
+   "sprite": "weapons",
+   "regions": [[1.30787,0.31875],[1.66662,0.31998],[2.0266,0.31982]],
+   "gain": 2.0,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 0.6,
+   "bus": "sfx",
+   "dense": true,
+   "family": "fire"
+  },
+  "pistolEvo": {
+   "sprite": "weapons",
+   "regions": [[2.38642,0.32351],[2.74993,0.32469]],
+   "gain": 1.75,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 0.6,
+   "bus": "sfx",
+   "dense": true,
+   "family": "fire"
+  },
+  "wPistolLast": {
+   "sprite": "weapons",
+   "regions": [[3.11463,0.36]],
+   "gain": 1.2,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "family": "fire"
+  },
+  "wCasing": {
+   "sprite": "weapons",
+   "regions": [[3.51463,0.09501],[3.64964,0.09501],[3.78465,0.09501]],
+   "gain": 0.28,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 2.0,
+   "bus": "sfx",
+   "dense": true
+  },
+  "wReloadMag": {
+   "sprite": "weapons",
+   "regions": [[3.91966,0.25]],
+   "gain": 1.08,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "pistolHit": {
+   "sprite": "weapons",
+   "regions": [[4.20966,0.122],[4.37166,0.122],[4.53365,0.122]],
+   "gain": 1.07,
+   "maxVoices": 5,
+   "cooldown": 0.03,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "pistolCast": {
+   "sprite": "weapons",
+   "regions": [[4.69565,0.23]],
+   "gain": 1.25,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "pistolSkHit": {
+   "sprite": "weapons",
+   "regions": [[4.96565,0.091],[5.09664,0.091]],
+   "gain": 0.98,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "wRivet": {
+   "sprite": "weapons",
+   "regions": [[5.22764,0.16],[5.42764,0.16],[5.62764,0.16]],
+   "gain": 0.79,
+   "maxVoices": 3,
+   "cooldown": 0.06,
+   "pitchJitter": 0.6,
+   "bus": "sfx",
+   "dense": true,
+   "family": "fire"
+  },
+  "rivetEvo": {
+   "sprite": "weapons",
+   "regions": [[5.82764,0.16],[6.02764,0.16]],
+   "gain": 0.75,
+   "maxVoices": 3,
+   "cooldown": 0.06,
+   "pitchJitter": 0.6,
+   "bus": "sfx",
+   "dense": true,
+   "family": "fire"
+  },
+  "wRivetEmpty": {
+   "sprite": "weapons",
+   "regions": [[6.22764,0.102]],
+   "gain": 1.08,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "wDrumReload": {
+   "sprite": "weapons",
+   "regions": [[6.36964,1.92]],
+   "gain": 0.78,
+   "maxVoices": 1,
+   "cooldown": 0.5,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "rivetHit": {
+   "sprite": "weapons",
+   "regions": [[8.32964,0.101],[8.47063,0.101],[8.61163,0.101]],
+   "gain": 0.63,
+   "maxVoices": 5,
+   "cooldown": 0.03,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "rivetCast": {
+   "sprite": "weapons",
+   "regions": [[8.75263,0.5]],
+   "gain": 0.74,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "rivetSkHit": {
+   "sprite": "weapons",
+   "regions": [[9.29263,0.091],[9.42363,0.091]],
+   "gain": 0.51,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "wBowDraw": {
+   "sprite": "weapons",
+   "regions": [[9.55463,0.84787]],
+   "gain": 0.34,
+   "maxVoices": 1,
+   "cooldown": 0.4,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "wBowRelease": {
+   "sprite": "weapons",
+   "regions": [[10.44249,0.42],[10.90249,0.42],[11.36249,0.42]],
+   "gain": 0.63,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.5,
+   "bus": "sfx",
+   "family": "fire"
+  },
+  "bowEvo": {
+   "sprite": "weapons",
+   "regions": [[11.82249,0.42],[12.28249,0.42]],
+   "gain": 0.56,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.5,
+   "bus": "sfx",
+   "family": "fire"
+  },
+  "wArrowHit": {
+   "sprite": "weapons",
+   "regions": [[12.74249,0.122],[12.90449,0.122],[13.06649,0.122]],
+   "gain": 0.91,
+   "maxVoices": 3,
+   "cooldown": 0.06,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "bowCast": {
+   "sprite": "weapons",
+   "regions": [[13.22848,0.5]],
+   "gain": 0.49,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "bowSkHit": {
+   "sprite": "weapons",
+   "regions": [[13.76848,0.12399],[13.93247,0.12399]],
+   "gain": 0.77,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "wScatter": {
+   "sprite": "weapons",
+   "regions": [[14.09646,0.49433],[14.63079,0.48249]],
+   "gain": 1.22,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.4,
+   "bus": "sfx",
+   "duck": 0.06,
+   "family": "fire"
+  },
+  "scatterEvo": {
+   "sprite": "weapons",
+   "regions": [[15.15329,0.49438],[15.68766,0.48249]],
+   "gain": 1.32,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.4,
+   "bus": "sfx",
+   "duck": 0.06,
+   "family": "fire"
+  },
+  "wPump": {
+   "sprite": "weapons",
+   "regions": [[16.21016,0.14501]],
+   "gain": 1.05,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "wShellIn": {
+   "sprite": "weapons",
+   "regions": [[16.39517,0.061]],
+   "gain": 1.1,
+   "maxVoices": 2,
+   "cooldown": 0.05,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "scatterHit": {
+   "sprite": "weapons",
+   "regions": [[16.49617,0.10499],[16.64116,0.10499]],
+   "gain": 1.08,
+   "maxVoices": 4,
+   "cooldown": 0.04,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "scatterCast": {
+   "sprite": "weapons",
+   "regions": [[16.78615,0.34]],
+   "gain": 0.59,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "scatterSkHit": {
+   "sprite": "weapons",
+   "regions": [[17.16615,0.122],[17.32814,0.122]],
+   "gain": 1.12,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "wTorchIgnite": {
+   "sprite": "weapons",
+   "regions": [[17.49014,0.5],[18.03014,0.49982]],
+   "gain": 0.48,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.4,
+   "bus": "sfx"
+  },
+  "torchEvo": {
+   "sprite": "weapons",
+   "regions": [[18.56995,0.5]],
+   "gain": 0.47,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "wTorchLoop": {
+   "sprite": "weapons",
+   "regions": [[19.10995,2.0]],
+   "gain": 0.35,
+   "maxVoices": 1,
+   "cooldown": 0.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "loop": true
+  },
+  "wTorchEnd": {
+   "sprite": "weapons",
+   "regions": [[21.14995,0.18]],
+   "gain": 0.68,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "wVent": {
+   "sprite": "weapons",
+   "regions": [[21.36995,0.6]],
+   "gain": 0.44,
+   "maxVoices": 1,
+   "cooldown": 0.5,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "torchHit": {
+   "sprite": "weapons",
+   "regions": [[22.00995,0.16],[22.20995,0.16]],
+   "gain": 0.81,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "torchCast": {
+   "sprite": "weapons",
+   "regions": [[22.40995,0.43478]],
+   "gain": 0.47,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "torchSkHit": {
+   "sprite": "weapons",
+   "regions": [[22.88474,0.16],[23.08474,0.16]],
+   "gain": 0.94,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "wRifleBurst3": {
+   "sprite": "weapons",
+   "regions": [[23.28474,0.51986],[23.8446,0.51705]],
+   "gain": 1.33,
+   "maxVoices": 1,
+   "cooldown": 0.1,
+   "pitchJitter": 0.3,
+   "bus": "sfx",
+   "family": "fire"
+  },
+  "wRifleBurst4": {
+   "sprite": "weapons",
+   "regions": [[24.40166,0.51025],[24.9519,0.52016]],
+   "gain": 1.34,
+   "maxVoices": 1,
+   "cooldown": 0.1,
+   "pitchJitter": 0.3,
+   "bus": "sfx",
+   "family": "fire"
+  },
+  "rifleReload": {
+   "sprite": "weapons",
+   "regions": [[25.51206,0.44]],
+   "gain": 0.79,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "rifleHit": {
+   "sprite": "weapons",
+   "regions": [[25.99206,0.112],[26.14406,0.112],[26.29605,0.112]],
+   "gain": 1.82,
+   "maxVoices": 5,
+   "cooldown": 0.03,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "rifleCast": {
+   "sprite": "weapons",
+   "regions": [[26.44805,0.46]],
+   "gain": 0.91,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "rifleSkHit": {
+   "sprite": "weapons",
+   "regions": [[26.94805,0.081],[27.06905,0.081]],
+   "gain": 1.2,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "wGrenadePop": {
+   "sprite": "weapons",
+   "regions": [[27.19005,0.3],[27.53005,0.3]],
+   "gain": 0.68,
+   "maxVoices": 2,
+   "cooldown": 0.15,
+   "pitchJitter": 0.4,
+   "bus": "sfx",
+   "family": "fire"
+  },
+  "grenadeEvo": {
+   "sprite": "weapons",
+   "regions": [[27.87005,0.3]],
+   "gain": 0.65,
+   "maxVoices": 2,
+   "cooldown": 0.15,
+   "pitchJitter": 0.4,
+   "bus": "sfx",
+   "family": "fire"
+  },
+  "grenadeBoom": {
+   "sprite": "weapons",
+   "regions": [[28.21005,1.01937],[29.26941,1.05311]],
+   "gain": 0.82,
+   "maxVoices": 3,
+   "cooldown": 0.07,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "duck": 0.12
+  },
+  "grenadeReload": {
+   "sprite": "weapons",
+   "regions": [[30.36252,0.368]],
+   "gain": 0.59,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "grenadeHit": {
+   "sprite": "weapons",
+   "regions": [[30.77052,0.101],[30.91152,0.101],[31.05252,0.101]],
+   "gain": 0.94,
+   "maxVoices": 5,
+   "cooldown": 0.03,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "grenadeCast": {
+   "sprite": "weapons",
+   "regions": [[31.19351,0.25]],
+   "gain": 0.74,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "grenadeSkHit": {
+   "sprite": "weapons",
+   "regions": [[31.48351,0.51095],[32.03447,0.46753]],
+   "gain": 0.75,
+   "maxVoices": 3,
+   "cooldown": 0.06,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "wDiscLaunch": {
+   "sprite": "weapons",
+   "regions": [[32.542,0.32],[32.902,0.32]],
+   "gain": 0.54,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.3,
+   "bus": "sfx",
+   "family": "fire"
+  },
+  "discEvo": {
+   "sprite": "weapons",
+   "regions": [[33.262,0.32]],
+   "gain": 0.52,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.3,
+   "bus": "sfx",
+   "family": "fire"
+  },
+  "wDiscPing": {
+   "sprite": "weapons",
+   "regions": [[33.622,0.28]],
+   "gain": 0.43,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "family": "ding"
+  },
+  "discHit": {
+   "sprite": "weapons",
+   "regions": [[33.942,0.14],[34.122,0.14],[34.302,0.14]],
+   "gain": 0.99,
+   "maxVoices": 4,
+   "cooldown": 0.04,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "discCast": {
+   "sprite": "weapons",
+   "regions": [[34.482,0.39304]],
+   "gain": 0.52,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "discSkHit": {
+   "sprite": "weapons",
+   "regions": [[34.91503,0.15399],[35.10902,0.15399]],
+   "gain": 0.83,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "wSentinelBurst5": {
+   "sprite": "weapons",
+   "regions": [[35.30302,0.56714],[35.91016,0.58968]],
+   "gain": 0.86,
+   "maxVoices": 1,
+   "cooldown": 0.1,
+   "pitchJitter": 0.3,
+   "bus": "sfx",
+   "family": "fire"
+  },
+  "wSentinelBurst5e": {
+   "sprite": "weapons",
+   "regions": [[36.53984,0.81678],[37.39662,0.7122]],
+   "gain": 0.79,
+   "maxVoices": 1,
+   "cooldown": 0.1,
+   "pitchJitter": 0.3,
+   "bus": "sfx",
+   "family": "fire"
+  },
+  "sentinelHit": {
+   "sprite": "weapons",
+   "regions": [[38.14882,0.14],[38.32882,0.14],[38.50882,0.14]],
+   "gain": 1.47,
+   "maxVoices": 5,
+   "cooldown": 0.03,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "sentinelReload": {
+   "sprite": "weapons",
+   "regions": [[38.68882,0.28]],
+   "gain": 0.5,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "sfx"
+  },
+  "sentinelCast": {
+   "sprite": "weapons",
+   "regions": [[39.00882,0.28]],
+   "gain": 0.55,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.5,
+   "bus": "sfx"
+  },
+  "sentinelSkHit": {
+   "sprite": "weapons",
+   "regions": [[39.32882,0.09868],[39.46751,0.09685]],
+   "gain": 1.58,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.5,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "eRailCharge": {
+   "sprite": "skills",
+   "regions": [[0.25,0.44812]],
+   "gain": 0.47,
+   "maxVoices": 2,
+   "cooldown": 0.2,
+   "pitchJitter": 0.5,
+   "bus": "sfx",
+   "priority": 4
+  },
+  "eRailFire": {
+   "sprite": "skills",
+   "regions": [[0.73812,0.61683]],
+   "gain": 1.1,
+   "maxVoices": 2,
+   "cooldown": 0.2,
+   "pitchJitter": 0.5,
+   "bus": "sfx",
+   "duck": 0.35,
+   "priority": 4
+  },
+  "eFrostBloom": {
+   "sprite": "skills",
+   "regions": [[1.39494,1.0141]],
+   "gain": 0.67,
+   "maxVoices": 2,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.3,
+   "priority": 4
+  },
+  "eFrostShatter": {
+   "sprite": "skills",
+   "regions": [[2.44905,0.142],[2.63104,0.142]],
+   "gain": 0.47,
+   "maxVoices": 3,
+   "cooldown": 0.05,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "dense": true
+  },
+  "eBarrageFlare": {
+   "sprite": "skills",
+   "regions": [[2.81304,1.39776]],
+   "gain": 0.61,
+   "maxVoices": 2,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.25,
+   "priority": 4
+  },
+  "eRodDrop": {
+   "sprite": "skills",
+   "regions": [[4.25079,1.25]],
+   "gain": 0.58,
+   "maxVoices": 2,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "priority": 4
+  },
+  "eThunder": {
+   "sprite": "skills",
+   "regions": [[5.54079,0.91],[6.49079,0.91]],
+   "gain": 1.05,
+   "maxVoices": 3,
+   "cooldown": 0.12,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "dense": true
+  },
+  "eThunderBig": {
+   "sprite": "skills",
+   "regions": [[7.44079,2.05859]],
+   "gain": 0.88,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.4,
+   "priority": 4
+  },
+  "eStormHum": {
+   "sprite": "skills",
+   "regions": [[9.53939,2.0]],
+   "gain": 0.26,
+   "maxVoices": 1,
+   "cooldown": 0.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "loop": true
+  },
+  "eStakeLock": {
+   "sprite": "skills",
+   "regions": [[11.57939,0.41]],
+   "gain": 0.94,
+   "maxVoices": 2,
+   "cooldown": 0.15,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "priority": 4
+  },
+  "eStake": {
+   "sprite": "skills",
+   "regions": [[12.02939,0.67313],[12.74252,0.67728]],
+   "gain": 0.81,
+   "maxVoices": 3,
+   "cooldown": 0.1,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.35,
+   "priority": 4
+  },
+  "eMagnetHum": {
+   "sprite": "skills",
+   "regions": [[13.4598,2.0]],
+   "gain": 0.34,
+   "maxVoices": 1,
+   "cooldown": 0.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "loop": true
+  },
+  "eImplode": {
+   "sprite": "skills",
+   "regions": [[15.4998,1.49517]],
+   "gain": 0.81,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.45,
+   "priority": 5
+  },
+  "eFlockCall": {
+   "sprite": "skills",
+   "regions": [[17.03497,0.35]],
+   "gain": 0.47,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "priority": 4
+  },
+  "eFlockPass": {
+   "sprite": "skills",
+   "regions": [[17.42497,1.15143]],
+   "gain": 0.6,
+   "maxVoices": 1,
+   "cooldown": 0.5,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.3,
+   "priority": 4
+  },
+  "eBeamCharge": {
+   "sprite": "skills",
+   "regions": [[18.61639,0.8]],
+   "gain": 0.52,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "priority": 4
+  },
+  "eBeamLoop": {
+   "sprite": "skills",
+   "regions": [[19.45639,2.0]],
+   "gain": 0.33,
+   "maxVoices": 1,
+   "cooldown": 0.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "loop": true
+  },
+  "eSunrise": {
+   "sprite": "skills",
+   "regions": [[21.49639,2.07587]],
+   "gain": 0.83,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.45,
+   "priority": 5
+  },
+  "relicCharge": {
+   "sprite": "skills",
+   "regions": [[23.61227,0.69311]],
+   "gain": 0.47,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "priority": 3
+  },
+  "relicJudge": {
+   "sprite": "skills",
+   "regions": [[24.34537,1.20449]],
+   "gain": 0.78,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.3,
+   "bus": "sfx",
+   "duck": 0.35,
+   "priority": 4
+  },
+  "relicHit": {
+   "sprite": "skills",
+   "regions": [[25.58986,0.25499],[25.88485,0.25499]],
+   "gain": 0.49,
+   "maxVoices": 3,
+   "cooldown": 0.06,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "dense": true,
+   "family": "hit"
+  },
+  "relicChain": {
+   "sprite": "skills",
+   "regions": [[26.17984,0.22],[26.43984,0.22]],
+   "gain": 0.76,
+   "maxVoices": 3,
+   "cooldown": 0.06,
+   "pitchJitter": 1.0,
+   "bus": "sfx",
+   "dense": true
+  },
+  "levelup": {
+   "sprite": "events",
+   "regions": [[0.25,1.08]],
+   "gain": 0.64,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.3
+  },
+  "nightWarn": {
+   "sprite": "events",
+   "regions": [[1.37,2.57113]],
+   "gain": 0.63,
+   "maxVoices": 1,
+   "cooldown": 1.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.4
+  },
+  "dayStart": {
+   "sprite": "events",
+   "regions": [[3.98113,1.86]],
+   "gain": 0.59,
+   "maxVoices": 1,
+   "cooldown": 1.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.3
+  },
+  "bossWarn": {
+   "sprite": "events",
+   "regions": [[5.88113,2.38685]],
+   "gain": 0.85,
+   "maxVoices": 1,
+   "cooldown": 1.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.6
+  },
+  "baseAlarm": {
+   "sprite": "events",
+   "regions": [[8.30798,0.58002]],
+   "gain": 0.49,
+   "maxVoices": 1,
+   "cooldown": 0.8,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.2
+  },
+  "victory": {
+   "sprite": "events",
+   "regions": [[8.928,2.1249]],
+   "gain": 0.62,
+   "maxVoices": 1,
+   "cooldown": 1.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.7
+  },
+  "defeat": {
+   "sprite": "events",
+   "regions": [[11.0929,2.68252]],
+   "gain": 0.7,
+   "maxVoices": 1,
+   "cooldown": 1.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.7
+  },
+  "dawnRestore": {
+   "sprite": "events",
+   "regions": [[13.81542,1.52]],
+   "gain": 0.6,
+   "maxVoices": 1,
+   "cooldown": 1.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.3
+  },
+  "eliteSpawn": {
+   "sprite": "events",
+   "regions": [[15.37542,1.12388]],
+   "gain": 0.59,
+   "maxVoices": 2,
+   "cooldown": 0.3,
+   "pitchJitter": 0.5,
+   "bus": "sfx",
+   "duck": 0.3
+  },
+  "newFront": {
+   "sprite": "events",
+   "regions": [[16.5393,0.93968]],
+   "gain": 0.6,
+   "maxVoices": 1,
+   "cooldown": 1.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.35
+  },
+  "medic": {
+   "sprite": "events",
+   "regions": [[17.51898,0.72]],
+   "gain": 0.37,
+   "maxVoices": 1,
+   "cooldown": 0.6,
+   "pitchJitter": 0.2,
+   "bus": "sfx"
+  },
+  "aid": {
+   "sprite": "events",
+   "regions": [[18.27898,0.35]],
+   "gain": 0.42,
+   "maxVoices": 2,
+   "cooldown": 0.4,
+   "pitchJitter": 0.3,
+   "bus": "sfx"
+  },
+  "lantern_spot": {
+   "sprite": "events",
+   "regions": [[18.66898,0.62]],
+   "gain": 0.43,
+   "maxVoices": 1,
+   "cooldown": 1.0,
+   "pitchJitter": 0.1,
+   "bus": "sfx"
+  },
+  "devBell": {
+   "sprite": "events",
+   "regions": [[19.32898,1.18]],
+   "gain": 0.53,
+   "maxVoices": 2,
+   "cooldown": 0.25,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.15,
+   "priority": 4
+  },
+  "devHorn": {
+   "sprite": "events",
+   "regions": [[20.54898,1.0]],
+   "gain": 0.55,
+   "maxVoices": 1,
+   "cooldown": 0.5,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.2,
+   "priority": 4
+  },
+  "devSiren": {
+   "sprite": "events",
+   "regions": [[21.58898,1.59905]],
+   "gain": 0.52,
+   "maxVoices": 1,
+   "cooldown": 1.0,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.25,
+   "priority": 4
+  },
+  "devRumble": {
+   "sprite": "events",
+   "regions": [[23.22803,1.39914]],
+   "gain": 0.67,
+   "maxVoices": 2,
+   "cooldown": 0.3,
+   "pitchJitter": 0.3,
+   "bus": "sfx",
+   "duck": 0.2,
+   "priority": 3
+  },
+  "devSplash": {
+   "sprite": "events",
+   "regions": [[24.66717,1.2]],
+   "gain": 0.68,
+   "maxVoices": 1,
+   "cooldown": 0.5,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.2,
+   "priority": 3
+  },
+  "devLever": {
+   "sprite": "events",
+   "regions": [[25.90717,0.122]],
+   "gain": 1.07,
+   "maxVoices": 2,
+   "cooldown": 0.12,
+   "pitchJitter": 0.3,
+   "bus": "sfx"
+  },
+  "pick": {
+   "sprite": "ui",
+   "regions": [[0.25,0.35]],
+   "gain": 0.88,
+   "maxVoices": 1,
+   "cooldown": 0.05,
+   "pitchJitter": 0.0,
+   "bus": "ui",
+   "family": "ding"
+  },
+  "click": {
+   "sprite": "ui",
+   "regions": [[0.64,0.03501]],
+   "gain": 1.0,
+   "maxVoices": 3,
+   "cooldown": 0.03,
+   "pitchJitter": 0.5,
+   "bus": "ui"
+  },
+  "deny": {
+   "sprite": "ui",
+   "regions": [[0.71501,0.2]],
+   "gain": 0.84,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.0,
+   "bus": "ui"
+  },
+  "tab": {
+   "sprite": "ui",
+   "regions": [[0.95501,0.08399]],
+   "gain": 1.04,
+   "maxVoices": 2,
+   "cooldown": 0.04,
+   "pitchJitter": 0.3,
+   "bus": "ui"
+  },
+  "open": {
+   "sprite": "ui",
+   "regions": [[1.079,0.21]],
+   "gain": 0.83,
+   "maxVoices": 2,
+   "cooldown": 0.06,
+   "pitchJitter": 0.0,
+   "bus": "ui"
+  },
+  "close": {
+   "sprite": "ui",
+   "regions": [[1.329,0.15]],
+   "gain": 0.83,
+   "maxVoices": 2,
+   "cooldown": 0.06,
+   "pitchJitter": 0.0,
+   "bus": "ui"
+  },
+  "claim": {
+   "sprite": "ui",
+   "regions": [[1.519,0.7]],
+   "gain": 0.88,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.0,
+   "bus": "ui",
+   "duck": 0.2
+  },
+  "chest": {
+   "sprite": "ui",
+   "regions": [[2.259,1.28]],
+   "gain": 0.88,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "ui",
+   "duck": 0.3
+  },
+  "stamp": {
+   "sprite": "ui",
+   "regions": [[3.579,0.15]],
+   "gain": 1.09,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.5,
+   "bus": "ui"
+  },
+  "tick": {
+   "sprite": "ui",
+   "regions": [[3.769,0.03]],
+   "gain": 1.09,
+   "maxVoices": 3,
+   "cooldown": 0.025,
+   "pitchJitter": 0.3,
+   "bus": "ui"
+  },
+  "upgradeBig": {
+   "sprite": "ui",
+   "regions": [[3.839,1.58324]],
+   "gain": 0.88,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "ui",
+   "duck": 0.35
+  },
+  "unlock": {
+   "sprite": "ui",
+   "regions": [[5.46224,1.02]],
+   "gain": 0.88,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "ui",
+   "duck": 0.2
+  },
+  "error": {
+   "sprite": "ui",
+   "regions": [[6.52224,0.16]],
+   "gain": 0.84,
+   "maxVoices": 2,
+   "cooldown": 0.1,
+   "pitchJitter": 0.0,
+   "bus": "ui"
+  },
+  "tier_up": {
+   "sprite": "ui",
+   "regions": [[6.72224,1.42]],
+   "gain": 0.88,
+   "maxVoices": 1,
+   "cooldown": 0.6,
+   "pitchJitter": 0.0,
+   "bus": "ui",
+   "duck": 0.25,
+   "priority": 4
+  },
+  "equip0": {
+   "sprite": "ui",
+   "regions": [[8.18224,0.43]],
+   "gain": 0.79,
+   "maxVoices": 1,
+   "cooldown": 0.15,
+   "pitchJitter": 0.0,
+   "bus": "ui"
+  },
+  "equip1": {
+   "sprite": "ui",
+   "regions": [[8.65224,0.63]],
+   "gain": 0.81,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "ui"
+  },
+  "equip2": {
+   "sprite": "ui",
+   "regions": [[9.32224,0.83]],
+   "gain": 0.82,
+   "maxVoices": 1,
+   "cooldown": 0.25,
+   "pitchJitter": 0.0,
+   "bus": "ui"
+  },
+  "equip3": {
+   "sprite": "ui",
+   "regions": [[10.19224,1.1]],
+   "gain": 0.84,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "ui",
+   "duck": 0.1
+  },
+  "equip4": {
+   "sprite": "ui",
+   "regions": [[11.33224,1.3]],
+   "gain": 0.86,
+   "maxVoices": 1,
+   "cooldown": 0.4,
+   "pitchJitter": 0.0,
+   "bus": "ui",
+   "duck": 0.2
+  },
+  "equip": {
+   "sprite": "ui",
+   "regions": [[12.67224,1.1]],
+   "gain": 0.85,
+   "maxVoices": 1,
+   "cooldown": 0.2,
+   "pitchJitter": 0.0,
+   "bus": "ui",
+   "duck": 0.1
+  },
+  "eReady": {
+   "sprite": "ui",
+   "regions": [[13.81224,0.31]],
+   "gain": 0.79,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "ui"
+  },
+  "eCutIn": {
+   "sprite": "ui",
+   "regions": [[14.16224,0.34787]],
+   "gain": 0.77,
+   "maxVoices": 1,
+   "cooldown": 0.5,
+   "pitchJitter": 0.0,
+   "bus": "ui"
+  },
+  "upTier": {
+   "sprite": "ui",
+   "regions": [[14.55011,0.44]],
+   "gain": 0.79,
+   "maxVoices": 2,
+   "cooldown": 0.08,
+   "pitchJitter": 0.0,
+   "bus": "ui"
+  },
+  "upCharge": {
+   "sprite": "ui",
+   "regions": [[15.03011,0.42281]],
+   "gain": 0.78,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "ui"
+  },
+  "upMax": {
+   "sprite": "ui",
+   "regions": [[15.49293,1.36324]],
+   "gain": 0.94,
+   "maxVoices": 1,
+   "cooldown": 0.5,
+   "pitchJitter": 0.0,
+   "bus": "ui",
+   "duck": 0.45,
+   "priority": 5
+  },
+  "buildUp2": {
+   "sprite": "ui",
+   "regions": [[16.89617,0.68]],
+   "gain": 0.55,
+   "maxVoices": 1,
+   "cooldown": 0.3,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "priority": 3
+  },
+  "buildUp3": {
+   "sprite": "ui",
+   "regions": [[17.61617,1.0]],
+   "gain": 0.59,
+   "maxVoices": 1,
+   "cooldown": 0.6,
+   "pitchJitter": 0.0,
+   "bus": "sfx",
+   "duck": 0.25,
+   "priority": 4
+  },
+  "music_lobby": {
+   "files": [
+    "music/music_lobby.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "music",
+   "loop": true,
+   "loopStart": 0.1,
+   "loopEnd": 62.708685
+  },
+  "music_day": {
+   "files": [
+    "music/music_day.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "music",
+   "loop": true,
+   "loopStart": 0.1,
+   "loopEnd": 68.671429
+  },
+  "music_night": {
+   "files": [
+    "music/music_night.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "music",
+   "loop": true,
+   "loopStart": 0.1,
+   "loopEnd": 67.6
+  },
+  "music_boss": {
+   "files": [
+    "music/music_boss.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "music",
+   "loop": true,
+   "loopStart": 0.1,
+   "loopEnd": 48.1
+  },
+  "sting_victory": {
+   "files": [
+    "music/sting_victory.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "music"
+  },
+  "sting_defeat": {
+   "files": [
+    "music/sting_defeat.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "music"
+  },
+  "sting_nightStart": {
+   "files": [
+    "music/sting_nightStart.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "music"
+  },
+  "sting_dawn": {
+   "files": [
+    "music/sting_dawn.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "music"
+  },
+  "amb_night": {
+   "files": [
+    "amb/amb_night.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "amb",
+   "loop": true,
+   "loopStart": 0.1,
+   "loopEnd": 16.1
+  },
+  "amb_day": {
+   "files": [
+    "amb/amb_day.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "amb",
+   "loop": true,
+   "loopStart": 0.1,
+   "loopEnd": 16.1
+  },
+  "amb_river": {
+   "files": [
+    "amb/amb_river.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "amb",
+   "loop": true,
+   "loopStart": 0.1,
+   "loopEnd": 16.1
+  },
+  "amb_city": {
+   "files": [
+    "amb/amb_city.mp3"
+   ],
+   "gain": 1.0,
+   "maxVoices": 1,
+   "cooldown": 0,
+   "pitchJitter": 0,
+   "bus": "amb",
+   "loop": true,
+   "loopStart": 0.1,
+   "loopEnd": 16.1
+  }
+ }
+}

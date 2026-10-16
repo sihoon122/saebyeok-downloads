@@ -1,0 +1,1 @@
+import{t as e}from"./game-C367TYJt.js";e();
