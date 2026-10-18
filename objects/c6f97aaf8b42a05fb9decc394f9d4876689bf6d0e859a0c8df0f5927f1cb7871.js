@@ -1,0 +1,1 @@
+import{t as e}from"./game-D-4fnf41.js";e();
