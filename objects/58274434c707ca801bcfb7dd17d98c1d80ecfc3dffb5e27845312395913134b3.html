@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#1b2433" />
+    <meta name="color-scheme" content="only light" /><!-- v737: 다크 모드 폰(삼성 인터넷·Chrome 자동 어둡게)이 종이·버튼 색을 멋대로 뒤집지 않게 -->
+    <meta name="description" content="새벽초소 — 오리 정비병이 밤마다 몰려오는 습격에서 송신기 기지를 지키는 생존 슈팅·기지 방어 게임" /><!-- interim N밤 틀 -->
+    <title>새벽초소</title>
+    <link rel="icon" type="image/png" href="./assets/ui/portrait_happy.png" />
+    <link rel="preload" as="image" href="./assets/ui/key_art.jpg" />
+    <style id="boot-ph">#boot{--ph:url(data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBACdASoMABUAPtFUo0uoJKMhsAgBABoJZgCdMoMYAEmL6zyydPdRosAA/u7TEPGg2ZYS4FtGr3luaWbupJYcUETjsPmd0sBwBnh9tmcgzsgJ9r3PWk80HuJkN4CPgIjY2P1ECAhne59cJL8hYKAL9frx+xZgNz49H1mpDa6pFkL//xADh5f28IiqCKDMC3m58FuGm7AAAA==)}</style>
+    <!-- v6b 로딩 막대 = 키트 .k-bar--xp 모양(18, 렌치 불빛), 팁 = 종이 카드(.k-panel--card 모양, 16px) -->
+    <style id="boot-css">#boot{--below:84px;--sb:var(--sab,env(safe-area-inset-bottom,0px));--bt:88;--colW:min(100vw,calc(100vh*900/1592));--tfs:clamp(32px,calc(var(--colW)*.16),72px);--cl:calc(50% - var(--colW)/2);z-index:1000;color:#fff;pointer-events:auto;touch-action:none;-webkit-user-select:none;user-select:none;background:#233349;font:14px Jua,system-ui;transition:opacity .15s;position:fixed;inset:0;overflow:hidden}#boot:before{content:"";background:url(./assets/ui/key_art.jpg) 50% 38%/cover,var(--ph,none) 50% 38%/cover;filter:blur(28px)brightness(.45);position:absolute;inset:-40px}#boot:after{content:"";background:linear-gradient(#0000,#233349f2);height:45%;position:absolute;inset:auto 0 0}.b-art{height:100%;top:0;left:var(--cl);width:var(--colW);object-fit:cover;object-position:50% 38%;background:var(--ph,none) 50% 38%/cover;animation:.2s b-in;position:absolute}.b-logo,.b-bar,.b-ver{z-index:1;position:absolute}.b-logo{box-sizing:border-box;width:min(var(--colW)*.9,var(--tfs)*5.2);font-size:var(--tfs);text-align:center;background:linear-gradient(#b58a5d,#9c7653 55%,#7f5d3d);border:3px solid #233349;border-radius:14px;padding:.06em 0 .12em;top:clamp(48px,12vh,150px);left:50%;translate:-50%;box-shadow:0 5px #0a0e1880}#boot h1{color:#f6ca61;text-shadow:0 3px #233349;white-space:nowrap;height:1.25em;margin:0;font-size:1em;font-weight:400;line-height:1.25em}.b-logo p{white-space:nowrap;margin:0;font-size:clamp(14px,.3em,22px);line-height:1.3}.b-note{width:calc(var(--colW) - 32px);opacity:.7;white-space:nowrap;text-overflow:ellipsis;text-shadow:0 1px 2px #000;font-size:14px;position:absolute;top:calc(100% + 10px);left:50%;overflow:hidden;translate:-50%}.b-ver{top:max(8px,env(safe-area-inset-top));right:max(8px,env(safe-area-inset-right));opacity:.6}.b-bar{left:var(--cl);width:var(--colW);height:18px;top:min(calc(var(--bt)*1vh),calc(100vh - var(--below) - var(--sb)))}.b-bar:before,.b-fill,.b-run{position:absolute;inset:0 16px}.b-bar:before{content:"";background:#0c101a8c;border:2px solid #1b2130;border-radius:9px}@supports (height:100dvh){#boot{--colW:min(100vw,calc(100dvh*900/1592))}.b-bar{top:min(calc(var(--bt)*1dvh),calc(100dvh - var(--below) - var(--sb)))}}.b-fill,.b-run{animation:2.5s ease-out forwards boot-creep}.b-fill{transform-origin:0;background:linear-gradient(#ffe89a,#fbcf4f 55%,#f2a92a);border-radius:7px;inset:2px 18px;transform:scaleX(0);box-shadow:inset 0 3px #fff8}.b-run{pointer-events:none;animation-name:b-mv}#boot svg{filter:drop-shadow(0 0 4px #ffd36b);width:26px;height:26px;position:absolute;top:-4px;left:-13px}.b-run:after{content:"";background:radial-gradient(#ffd36b99,#0000 70%);border-radius:50%;width:34px;height:34px;position:absolute;top:-8px;left:-17px}@keyframes boot-creep{to{transform:scaleX(.12)}}@keyframes b-mv{to{transform:translate(12%)}}@keyframes b-gl{0%{opacity:.15}}@keyframes b-in{0%{opacity:0}}.b-pct{opacity:.85;position:absolute;bottom:calc(100% + 6px);right:16px}.b-tip{color:#1b2130;text-align:center;width:-moz-fit-content;width:fit-content;font-size:clamp(14px,var(--colW)*.05,16px);word-break:keep-all;background:#f4ecd9;border-radius:8px;margin:auto;line-height:1.25;position:absolute;top:calc(100% + 12px);left:12px;right:12px;box-shadow:0 0 0 6px #f4ecd9,0 0 0 8px #c9ad86,0 3px 0 8px #c9ad86}#boot.out{opacity:0;pointer-events:none}@media (prefers-reduced-motion:no-preference){#boot:not(.calm){transition-duration:.25s}#boot:not(.calm) .b-run:after{animation:1.2s infinite alternate b-gl}#boot:not(.calm) .b-tip{transition:opacity .2s}}@media (max-aspect-ratio:10/13){#boot{--colW:100vw;--tfs:clamp(40px,11vw,72px)}#boot:before{display:none}}@media (min-aspect-ratio:8/5) and (max-height:559px){#boot{--bt:84;--below:56px;--colW:100vw;--tfs:clamp(32px,9vh,48px)}#boot:before{display:none}#boot:after{height:60%}.b-art{object-position:50% 64%}.b-logo{top:16px;left:16px;translate:none}.b-logo p,.b-note{display:none}.b-bar{width:min(70%,720px);left:max(15%,50% - 360px)}.b-tip{white-space:nowrap;text-overflow:ellipsis;top:calc(100% + 9px);overflow:hidden}}</style>
+  <link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon-180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script defer src="./pwa.js"></script>
+  <script type="module" crossorigin src="./assets/index-Dhg6m6eo.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-Bi-D_2cA.js">
+  <link rel="modulepreload" crossorigin href="./assets/giants-BYvA5jB-.js">
+  <link rel="modulepreload" crossorigin href="./assets/quest-Be-JmXVR.js">
+  <link rel="modulepreload" crossorigin href="./assets/beacon.types-DxMbjkZf.js">
+  <link rel="modulepreload" crossorigin href="./assets/quest-NOjy4-vJ.js">
+  <link rel="modulepreload" crossorigin href="./assets/tutDom-CtvuVrCZ.js">
+  <link rel="modulepreload" crossorigin href="./assets/qbossArt.gen-FCPeCwwb.js">
+  <link rel="modulepreload" crossorigin href="./assets/vm-DIzxVY9R.js">
+  <link rel="modulepreload" crossorigin href="./assets/quest-Cp_j0nUe.js">
+  <link rel="modulepreload" crossorigin href="./assets/portrait-D_LVFjdt.js">
+  <link rel="modulepreload" crossorigin href="./assets/hordeVM-B0J43z_0.js">
+  <link rel="modulepreload" crossorigin href="./assets/tower-D74OOG9L.js">
+  <link rel="modulepreload" crossorigin href="./assets/domWrite-DJ7tbbg8.js">
+  <link rel="modulepreload" crossorigin href="./assets/game-O_ztGD7o.js">
+</head>
+  <body>
+    <div id="boot" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="불러오는 중">
+      <img class="b-art" src="./assets/ui/key_art.jpg" alt="" draggable="false" />
+      <div class="b-logo"><h1>새벽초소</h1><p>오리 정비병의 기나긴 밤</p><!-- interim --></div>
+      <div class="b-ver"></div>
+      <div class="b-bar"><i class="b-fill"></i><span class="b-run"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffd36b" stroke="#233349" stroke-width="1.6" d="M21 6.5a5 5 0 0 1-6.6 4.7l-7.6 7.6a2 2 0 0 1-2.8-2.8l7.6-7.6A5 5 0 0 1 17.5 2L14.6 5l.6 3.2 3.2.6z"/></svg></span><b class="b-pct"></b><div class="b-tip" aria-live="polite">송신기 기지로 가는 중…</div></div>
+    </div>
+    <link rel="stylesheet" crossorigin href="./assets/tutDom-BDwqt4tq.css">
+    <link rel="stylesheet" crossorigin href="./assets/quest-CHKYLIXp.css">
+    <link rel="stylesheet" crossorigin href="./assets/hordeVM-DvhXJfVX.css">
+    <link rel="stylesheet" crossorigin href="./assets/game-CYAML_w4.css">
+    <div id="app">
+      <div id="game-canvas"></div>
+      <div id="touch-layer"></div>
+      <div id="ui-root"></div>
+    </div>
+    <noscript>이 게임은 자바스크립트가 필요합니다.</noscript>
+  </body>
+</html>
