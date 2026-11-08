@@ -1,1 +1,0 @@
-import{t as e}from"./game-C7Ps391X.js";e();

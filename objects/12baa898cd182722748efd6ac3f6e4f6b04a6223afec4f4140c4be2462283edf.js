@@ -1,1 +1,0 @@
-import{t as e}from"./game-BSYW9myD.js";e();

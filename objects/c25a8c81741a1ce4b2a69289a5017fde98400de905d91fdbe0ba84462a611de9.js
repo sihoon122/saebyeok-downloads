@@ -1,1 +1,0 @@
-import{t as e}from"./game-D2psVpCO.js";e();
