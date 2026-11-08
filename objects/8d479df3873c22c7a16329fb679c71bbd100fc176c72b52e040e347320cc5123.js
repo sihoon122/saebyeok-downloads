@@ -1,0 +1,1 @@
+import{t as e}from"./game-BJ5hmeOo.js";e();

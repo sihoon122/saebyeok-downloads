@@ -60,7 +60,7 @@ async function verifyEnvelope(envelope, config, floor = 0) {
   return m;
 }
 
-window.saebyeokUpdateMetadata = async () => { const r = await fetch(UPDATE.manifestUrl + '?check=' + Date.now(), {cache:'no-store',credentials:'omit',redirect:'error'}); if (!r.ok) throw Error('Update unavailable'); return verifyEnvelope(JSON.parse(new TextDecoder().decode(await readBounded(r, 1572864))), UPDATE, 56); }; })();
+window.saebyeokUpdateMetadata = async () => { const r = await fetch(UPDATE.manifestUrl + '?check=' + Date.now(), {cache:'no-store',credentials:'omit',redirect:'error'}); if (!r.ok) throw Error('Update unavailable'); return verifyEnvelope(JSON.parse(new TextDecoder().decode(await readBounded(r, 1572864))), UPDATE, 60); }; })();
 (() => {
   if (document.documentElement.dataset.nativeApp === 'true') return;
   if (!('serviceWorker' in navigator) || !window.isSecureContext) return;
